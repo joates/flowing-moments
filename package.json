@@ -1,0 +1,36 @@
+{
+  "name": "flowing-moments",
+  "version": "2.0.0",
+  "description": "Calculates a stream of _dates_ extending from any given date (that moment.js can recognize), or the current date when none is provided. Many configuration options including: startDay, format, stride, exclude, limit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joates/flowing-moments.git"
+  },
+  "keywords": [
+    "moment",
+    "flowing",
+    "stream",
+    "date",
+    "calendar",
+    "month",
+    "day",
+    "year",
+    "utility"
+  ],
+  "author": "@joat_es (http://joat.es)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joates/flowing-moments/issues"
+  },
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "moment": "^2.8.1"
+  },
+  "devDependencies": {
+    "tape": "^2.14.0"
+  }
+}
