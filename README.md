@@ -31,7 +31,7 @@ days('2010-12-25', opts, function(err, data) {
 
 _or from the command line.._
 ```javascript
-node index.js --format='dddd Do, MMM YYYY' --limit=5 '2008-02-29'
+node index.js --format='dddd Do, MMM YYYY' --limit=5 --stride=7 '2008-02-29'
 
 //output is:
 Friday 29th, Feb 2008
@@ -84,6 +84,12 @@ node index.js --help
 see the [Moment.js docs](http://momentjs.com/docs/#/displaying/format/) for different ways of formatting the date output
 
 
+### (_in_)accuracy
+
+There is an issue with accuracy when using ```date.subtract(n, 'days')```, which is discussed in this [issue](https://github.com/moment/moment/issues/961). A ```hardLimit``` has been implemented [here](https://github.com/joates/flowing-moments/blob/master/lib/main.js#L63) to avoid dates earlier than _June 1888_, this is NOT the point at which the bug appears, it is just an arbitrary limit because for my use case i am not interested in dates older than this.
+
+
 ### License
 
 MIT
+
