@@ -1,6 +1,6 @@
 {
   "name": "flowing-moments",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Calculates a stream of _dates_ extending from any given date (that moment.js can recognize), or the current date when none is provided. Many configuration options including: startDay, format, stride, exclude, limit.",
   "main": "index.js",
   "scripts": {
