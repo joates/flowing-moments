@@ -1,7 +1,7 @@
 var test = require('tape')
   , concat = require('concat-stream')
   , flo_mom = require('../index')
-  , fixture = '2008-02-292008-02-222008-02-152008-02-082008-02-01'
+  , fixture = '2008-02-29\n2008-02-22\n2008-02-15\n2008-02-08\n2008-02-01\n'
   , t_count = 0
 
 test('February 2008 has 5 fridays (cli)', function(t) {
