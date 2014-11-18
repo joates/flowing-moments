@@ -86,7 +86,7 @@ see the [Moment.js docs](http://momentjs.com/docs/#/displaying/format/) for diff
 
 
 ### (_in_)accuracy
-There is an issue with accuracy when using ```date.subtract(n, 'days')```, which is discussed in this [issue](https://github.com/moment/moment/issues/961). A ```hardLimit``` has been implemented [here](https://github.com/joates/flowing-moments/blob/master/lib/main.js#L63) to avoid dates earlier than _June 1888_, this is NOT the point at which the bug appears, it is just an arbitrary limit because for my use case i am not interested in dates older than this.
+There is an issue with accuracy when using ```date.subtract(n, 'days')```, which is discussed in this [issue](https://github.com/moment/moment/issues/961). A ```hardLimit``` has been implemented [here](https://github.com/joates/flowing-moments/blob/master/lib/main.js#L18) to avoid dates earlier than _June 1888_, this is NOT the point at which the bug appears, it is just an arbitrary limit because for my use case i am not interested in dates older than this.
 
 
 ### License
